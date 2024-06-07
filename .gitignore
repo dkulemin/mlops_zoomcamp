@@ -1,4 +1,6 @@
-.venv
+.venv*
+*.db
+artifacts/
 data/
-output/
 mlruns/
+output/

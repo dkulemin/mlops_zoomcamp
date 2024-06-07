@@ -79,7 +79,7 @@ def run_register_model(data_path: str, top_n: int):
     )[0]
 
     # Register the best model
-    mlflow.register_model(model_uri=f"runs:/{best_run.info.run_id}/artifacts", name="green-taxi")
+    mlflow.register_model(model_uri=f"runs:/{best_run.info.run_id}/model", name="green-taxi")
 
 
 if __name__ == '__main__':
